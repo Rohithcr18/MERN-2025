@@ -11,6 +11,8 @@ export const Navbar = () => {
         <Link to="/contact" className="Link">Contact</Link>
         <Link to="/skills" className="Link">Skills</Link>
         <Link to="/hooks" className="Link">HOOKS</Link>
+        <Link to="/login" className="Link">Login</Link>
+        <Link to="/signup" className="Link">Signup</Link>
       </nav>
     </div>
   )

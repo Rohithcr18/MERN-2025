@@ -11,6 +11,9 @@ import Skills from './pages/Skills';
 import State from './Hooks/State'
 import Hooks from './pages/Hooks'
 import Effect from './Hooks/Effect'
+import Login   from './pages/Login';
+import Ref   from './Hooks/Ref';
+import Signup from './pages/Singup'
 
 const App = () => {
    var fruits = ["Apple","Banana","Orange"];
@@ -26,6 +29,9 @@ const App = () => {
         <Route path='/hooks' element={<Hooks/>}/>
         <Route path='/state' element={<State/>}/>
         <Route path='/effect' element={<Effect/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/ref' element={<Ref/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
      {/* <Home items={fruits}/>  
      <Child name="viky" phone="98321" dep="IT"/>
