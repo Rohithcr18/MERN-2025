@@ -2,4 +2,8 @@
     width: 200px;
     height: 200px;
   }
+  body{
+    background-image:linear-gradient(to left,red,orange);
+    margin:0;
+  }
   

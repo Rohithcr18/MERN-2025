@@ -1,17 +1,37 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 import Child from './components/Child'
 import { Home } from './pages/Home'
 import './App.css'
 import Counter from './assets/Counter'
+import { Navbar } from './components/Navbar'
+import About  from './pages/About';
+import Contact from './pages/Contact';
+import Skills from './pages/Skills';
+import State from './Hooks/State'
+import Hooks from './pages/Hooks'
+import Effect from './Hooks/Effect'
 
 const App = () => {
-  // var fruits = ["Apple","Banana","Orange"];
+   var fruits = ["Apple","Banana","Orange"];
   return (
     <div>
-      {/* <Child name="viky" phone="98321" dep="IT"/>
+         
+      <Navbar/>
+      <Routes>
+        <Route path ='/home' element={<Home items={fruits}/>} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/skills' element={<Skills/>}/>
+        <Route path='/hooks' element={<Hooks/>}/>
+        <Route path='/state' element={<State/>}/>
+        <Route path='/effect' element={<Effect/>}/>
+      </Routes>
+     {/* <Home items={fruits}/>  
+     <Child name="viky" phone="98321" dep="IT"/>
       <Child name="viky" phone="98321" dep="IT"/>
-      <Home items={fruits}/> */}
-      <Counter/>
+      <Home items={fruits}/>  */}
+
     </div>
   )
 }

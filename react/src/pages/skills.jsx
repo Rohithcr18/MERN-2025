@@ -1,10 +1,9 @@
-import { Component } from "react";
+import React from 'react'
 
-class Skills extends Component {
-    render(){
-        return (
-            <div>Skills</div>
-        )
-    }
+const skills = () => {
+  return (
+    <div>skills</div>
+  )
 }
-export default Skills
+
+export default skills
