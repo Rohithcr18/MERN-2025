@@ -1,4 +1,4 @@
-const user = require('../models/totomodels')
+const user = require('../models/models')
 
 exports.getRoute = async (req,res)=>{
     const userData = await user.find()
@@ -18,7 +18,7 @@ exports.postRoute = async (req,res) =>{
 }
 exports.putRoute = async (req,res) =>{
     const {username,password}  = req.body;
-    const update = await user.findByIdAndUpdate(req.params.id , req.body)
+    const update = await user.findByIdAndUpdate(req.params.id , req.body,{new:true})
     if(!update) return res.status(401).json({message:"User Not Exist"})
         res.status(201).json({update})
 }
