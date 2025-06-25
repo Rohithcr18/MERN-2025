@@ -1,12 +1,11 @@
 const mongoose = require('mongoose')
-const LINK = process.env.LINK;
-const connetDB = async ()=>{
+const connectDB = async ()=>{
     try{
-        await mongoose.connect(LINK);
+        await mongoose.connect(process.env.MONGOURL)
         console.log("successfully connected")
     }
-    catch{
+    catch(err){
         console.log(err)
     }
 }
-module.exports = connetDB
+module.exports = connectDB

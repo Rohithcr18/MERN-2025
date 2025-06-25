@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getRoute , postRoute , putRoute , deleteRoute} = require('../controllers/egController')
+const {getRoute , postRoute , putRoute , deleteRoute} = require('../controllers/totocontroller')
 router.get('/get',getRoute)
 router.post('/post',postRoute)
 router.put('/put/:id',putRoute)
